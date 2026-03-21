@@ -31,3 +31,21 @@
 .profile-img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
+.hero-section {
+    /* Linear gradient creates a dark overlay so your white text is easy to read */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://static.wixstatic.com/media/84770f_e9e3ddab1b664dfa8e77b6ff4380add8~mv2.jpg');
+    
+    /* Crucial "Fit" Properties */
+    background-size: cover;      /* Ensures image fills the container */
+    background-position: center;   /* Keeps the focus of the image in the middle */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    background-attachment: scroll; /* Changed from fixed to scroll for better mobile fit */
+    
+    /* Height Adjustments */
+    min-height: 50vh;            /* Takes up 50% of the screen height */
+    padding: 60px 0;             /* Adds space inside the top and bottom */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
