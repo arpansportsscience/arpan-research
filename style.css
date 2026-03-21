@@ -14,3 +14,20 @@
 .btn-lg:hover {
     transform: translateY(-3px);
 }
+/* Updated Profile Image Styling */
+.profile-img {
+    width: 140px;      /* Smaller width */
+    height: 140px;     /* Match height for perfect circle */
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.8); /* Slightly thinner border */
+    object-fit: cover; /* Ensures face isn't stretched */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
