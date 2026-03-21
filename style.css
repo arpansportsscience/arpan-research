@@ -1,0 +1,39 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #21201e;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://static.wixstatic.com/media/84770f_e9e3ddab1b664dfa8e77b6ff4380add8~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #eca471;
+}
+
+.nav-link.active {
+    color: #eca471 !important;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: auto;
+}
