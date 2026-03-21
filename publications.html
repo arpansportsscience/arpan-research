@@ -37,6 +37,24 @@
         }
         .nav-link.active { border-bottom: 2px solid #003366; }
 
+        /* Profile Buttons Section */
+        .profile-buttons .btn {
+            margin: 8px;
+            padding: 10px 24px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-scholar { background-color: #4285f4; color: white; border: none; }
+        .btn-scholar:hover { background-color: #357ae8; color: white; box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3); }
+
+        .btn-scopus { border: 2px solid #ff6600; color: #ff6600; background: transparent; }
+        .btn-scopus:hover { background-color: #ff6600; color: white; }
+
+        .btn-orcid { border: 2px solid #a6ce39; color: #a6ce39; background: transparent; }
+        .btn-orcid:hover { background-color: #a6ce39; color: white; }
+
         /* Publication Cards */
         .pub-card {
             border-left: 5px solid #0056b3;
@@ -57,27 +75,6 @@
             font-weight: bold;
         }
 
-        /* Profile Buttons Section */
-        .profile-buttons .btn {
-            margin: 10px;
-            padding: 10px 20px;
-            font-weight: 600;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-
-        /* Google Scholar Specific Style */
-        .btn-scholar {
-            background-color: #4285f4;
-            color: white;
-            border: none;
-        }
-        .btn-scholar:hover {
-            background-color: #357ae8;
-            color: white;
-            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
-        }
-
         /* Footer & Visitor Badge */
         footer {
             background-color: #212121;
@@ -93,7 +90,7 @@
             gap: 10px;
             margin-top: 5px;
         }
-        .visitor-badge { height: 20px !important; width: auto !important; border: none !important; }
+        .visitor-badge { height: 22px !important; width: auto !important; border: none !important; }
         .eye-icon { color: #0056b3; font-size: 1.1rem; }
     </style>
 </head>
@@ -115,7 +112,7 @@
     <header class="hero-section">
         <div class="container">
             <h1>Research Publications</h1>
-            <p class="lead">Molecular Insights into Sports Science & Exercise Physiology</p>
+            <p class="lead">PhD Scholar | Central University of Rajasthan</p>
         </div>
     </header>
 
@@ -124,13 +121,13 @@
             <div class="col-md-10">
                 
                 <div class="text-center mb-5 profile-buttons">
-                    <a href="https://scholar.google.co.in/citations?user=L8FYtzgAAAAJ" target="_blank" class="btn btn-scholar">
+                    <a href="https://scholar.google.co.in/citations?user=L8FYtzgAAAAJ" target="_blank" class="btn btn-scholar shadow-sm">
                         <i class="fas fa-graduation-cap me-2"></i> Google Scholar
                     </a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=58620857900" target="_blank" class="btn btn-outline-primary">
-                        <i class="fas fa-search-plus me-2"></i> Scopus Profile
+                    <a href="https://www.scopus.com/authid/detail.uri?authorId=58348190200" target="_blank" class="btn btn-scopus shadow-sm">
+                        <i class="fas fa-book me-2"></i> Scopus Profile
                     </a>
-                    <a href="https://orcid.org/0000-0001-8648-2917" target="_blank" class="btn btn-outline-success">
+                    <a href="https://orcid.org/0000-0001-8648-2917" target="_blank" class="btn btn-orcid shadow-sm">
                         <i class="fab fa-orcid me-2"></i> ORCID iD
                     </a>
                 </div>
@@ -162,7 +159,7 @@
 
     <footer>
         <div class="container">
-            <p class="mb-1">&copy; 2026 Arpan Chattopadhyay</p>
+            <p class="mb-1 text-white">&copy; 2026 Arpan Chattopadhyay</p>
             <div class="visitor-container">
                 <i class="fas fa-eye eye-icon"></i>
                 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" alt="Visitor Count" class="visitor-badge">
