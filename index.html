@@ -11,7 +11,7 @@
         /* Global Styles */
         body {
             font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            color: #333;
+            color: #003366; /* Deep Blue for general text */
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -25,30 +25,31 @@
             border-bottom: 1px solid #ffe0b2;
         }
 
-        /* Profile Image - Fixed small circle */
+        /* Profile Image */
         .profile-img {
             width: 150px;
             height: 150px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #e65100; /* Deep orange border */
+            border: 4px solid #0056b3; /* Blue border */
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             margin-bottom: 20px;
         }
 
-        .hero-section h1 {
-            color: #e65100; /* Deep orange accent */
+        /* Heading Colors in Blue */
+        .hero-section h1, h2, h5 {
+            color: #003366; /* Strong Blue for headings */
             font-weight: 700;
         }
 
         .hero-section .lead {
-            color: #5d4037;
+            color: #0056b3; /* Lighter Blue for the subtitle */
             font-weight: 500;
         }
 
-        /* Social Links */
+        /* Social Links in Blue */
         .social-links a {
-            color: #e65100;
+            color: #0056b3;
             font-size: 1.6rem;
             margin: 0 12px;
             transition: transform 0.2s ease;
@@ -57,7 +58,7 @@
 
         .social-links a:hover {
             transform: translateY(-3px);
-            color: #bf360c;
+            color: #003366;
         }
 
         /* Navbar Styling */
@@ -67,12 +68,12 @@
         }
 
         .navbar-brand, .nav-link {
-            color: #e65100 !important;
+            color: #003366 !important;
             font-weight: 600;
         }
 
         .nav-link.active {
-            border-bottom: 2px solid #e65100;
+            border-bottom: 2px solid #003366;
         }
 
         /* Content Section */
@@ -81,13 +82,13 @@
         }
 
         .research-card {
-            border-left: 5px solid #e65100;
-            background-color: #fafafa;
+            border-left: 5px solid #0056b3; /* Blue accent line */
+            background-color: #f8fbff; /* Very faint blue tint */
         }
 
         /* Footer & Visitor Badge */
         footer {
-            background-color: #212121; /* Dark footer */
+            background-color: #212121;
             color: #ffffff;
             padding: 40px 0;
             margin-top: auto;
@@ -152,10 +153,10 @@
                 <div class="p-4 research-card rounded shadow-sm">
                     <h5 class="fw-bold">Research Focus</h5>
                     <ul class="list-unstyled mb-0">
-                        <li><i class="fas fa-check-circle text-success me-2"></i> Sports Injury Science</li>
-                        <li><i class="fas fa-check-circle text-success me-2"></i> Exercise Physiology</li>
-                        <li><i class="fas fa-check-circle text-success me-2"></i> CFC-MT-DNA Biomarkers</li>
-                        <li><i class="fas fa-check-circle text-success me-2"></i> Athlete Recovery</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Sports Injury Science</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Exercise Physiology</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> CFC-MT-DNA Biomarkers</li>
+                        <li><i class="fas fa-check-circle text-primary me-2"></i> Athlete Recovery</li>
                     </ul>
                 </div>
             </div>
@@ -169,7 +170,7 @@
             
             <div class="mt-4">
                 <p class="small-text mb-1">Total Page Views</p>
-                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%23E65100&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false" 
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Hits&edge_flat=false" 
                      alt="Visitor Count" 
                      class="visitor-badge">
             </div>
