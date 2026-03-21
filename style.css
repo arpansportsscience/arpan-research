@@ -31,21 +31,46 @@
 .profile-img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
+/* 1. Fix the Background Image to Fit the Screen */
 .hero-section {
-    /* Linear gradient creates a dark overlay so your white text is easy to read */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    position: relative;
+    /* Dark overlay + Background Image */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                 url('https://static.wixstatic.com/media/84770f_e9e3ddab1b664dfa8e77b6ff4380add8~mv2.jpg');
     
-    /* Crucial "Fit" Properties */
-    background-size: cover;      /* Ensures image fills the container */
-    background-position: center;   /* Keeps the focus of the image in the middle */
-    background-repeat: no-repeat;  /* Prevents tiling */
-    background-attachment: scroll; /* Changed from fixed to scroll for better mobile fit */
+    /* This makes the image fit and center perfectly */
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
     
-    /* Height Adjustments */
-    min-height: 50vh;            /* Takes up 50% of the screen height */
-    padding: 60px 0;             /* Adds space inside the top and bottom */
+    /* Controls the height of the banner */
+    min-height: 450px; 
+    padding: 80px 0;
+    
     display: flex;
     align-items: center;
-    justify-content: center;
+    color: white;
+}
+
+/* 2. Fix the Profile Photo Size and Shape */
+.profile-img {
+    width: 150px;           /* Fixed small width */
+    height: 150px;          /* Fixed height to match width */
+    object-fit: cover;      /* Crops the photo into the box without stretching */
+    border-radius: 50%;     /* Makes it a perfect circle */
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+
+/* 3. Small adjustments for text readability */
+.hero-section h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
 }
