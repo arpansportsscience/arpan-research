@@ -6,96 +6,25 @@
     <title>Photos | Arpan Chattopadhyay</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <style>
-        body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            color: #003366; /* Deep Blue text */
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background-color: #fff3e0; 
-            padding: 50px 0;
-            border-bottom: 1px solid #ffe0b2;
-            text-align: center;
-        }
+        body { font-family: 'Segoe UI', sans-serif; color: #003366; background-color: #ffffff; display: flex; flex-direction: column; min-height: 100vh; }
+        .hero-section { background-color: #fff3e0; padding: 50px 0; border-bottom: 1px solid #ffe0b2; text-align: center; }
         .hero-section h1 { color: #e65100; font-weight: 700; }
-
-        /* Navbar */
-        .navbar {
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .navbar-brand, .nav-link {
-            color: #003366 !important;
-            font-weight: 600;
-        }
+        .navbar { background-color: #ffffff !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .navbar-brand, .nav-link { color: #003366 !important; font-weight: 600; }
         .nav-link.active { border-bottom: 2px solid #003366; }
-
-        /* Gallery Styles */
-        .gallery-container {
-            padding: 40px 0;
-        }
-        .img-wrapper {
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            margin-bottom: 24px;
-            border: 3px solid #fff3e0;
-            transition: 0.3s;
-            background-color: #f8fbff;
-        }
-        .img-wrapper:hover {
-            transform: translateY(-5px);
-            border-color: #0056b3;
-        }
-        .gallery-img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-        }
-        .img-caption {
-            padding: 12px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            text-align: center;
-            background: #fff;
-            border-top: 1px solid #eee;
-        }
-
-        /* Footer & Visitor Badge */
-        footer {
-            background-color: #212121;
-            color: #ffffff;
-            padding: 40px 0;
-            margin-top: auto;
-            text-align: center;
-        }
-        .visitor-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 5px;
-        }
-        .visitor-badge { height: 22px !important; width: auto !important; border: none !important; }
-        .eye-icon { color: #0056b3; font-size: 1.1rem; }
+        .img-wrapper { overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 24px; border: 3px solid #fff3e0; transition: 0.3s; }
+        .img-wrapper:hover { transform: translateY(-5px); border-color: #0056b3; }
+        .gallery-img { width: 100%; height: 350px; object-fit: cover; display: block; background-color: #f0f0f0; }
+        .img-caption { padding: 12px; font-size: 0.9rem; font-weight: 600; text-align: center; background: #fff; }
+        footer { background-color: #212121; color: #ffffff; padding: 40px 0; margin-top: auto; text-align: center; }
+        .visitor-container { display: flex; align-items: center; justify-content: center; gap: 10px; }
     </style>
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Arpan Chattopadhyay</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -111,43 +40,39 @@
     <header class="hero-section">
         <div class="container">
             <h1>Photo Gallery</h1>
-            <p class="lead">Research, Academic Life & Lab Work</p>
+            <p class="lead">Research & Academic Journey</p>
         </div>
     </header>
 
-    <main class="container gallery-container">
+    <main class="container my-5">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4">
                 <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/61f43c_20c4369e5d44474780517726715f5791~mv2.jpg" class="gallery-img" alt="Lab Work">
-                    <div class="img-caption">Processing Samples in Lab</div>
+                    <img src="lab.jpg" class="gallery-img" alt="Lab Work">
+                    <div class="img-caption">Laboratory Research</div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4">
                 <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/61f43c_90b4e6cb0f9040008b61706680464670~mv2.jpg" class="gallery-img" alt="Poster Presentation">
-                    <div class="img-caption">Academic Poster Presentation</div>
+                    <img src="poster.jpg" class="gallery-img" alt="Poster">
+                    <div class="img-caption">Poster Presentation</div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4">
                 <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/61f43c_88acdb08080848058778837130454508~mv2.jpg" class="gallery-img" alt="Clinical Setting">
+                    <img src="clinical.jpg" class="gallery-img" alt="Clinical">
                     <div class="img-caption">Clinical Observation</div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6">
                 <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/61f43c_fdfb18ca0ca048459771141706484848~mv2.jpg" class="gallery-img" alt="RKMVERI Campus">
+                    <img src="campus-1.jpg" class="gallery-img" alt="RKMVERI">
                     <div class="img-caption">At RKMVERI Belur Math</div>
                 </div>
             </div>
-
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-6">
                 <div class="img-wrapper">
-                    <img src="https://static.wixstatic.com/media/61f43c_04d39204040448488317130454508001~mv2.jpg" class="gallery-img" alt="CURAJ Campus">
+                    <img src="campus-2.jpg" class="gallery-img" alt="CURAJ">
                     <div class="img-caption">Central University of Rajasthan</div>
                 </div>
             </div>
@@ -156,14 +81,12 @@
 
     <footer>
         <div class="container">
-            <p class="mb-1 text-white">&copy; 2026 Arpan Chattopadhyay</p>
+            <p class="mb-1">&copy; 2026 Arpan Chattopadhyay</p>
             <div class="visitor-container">
-                <i class="fas fa-eye eye-icon"></i>
-                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" alt="Visitor Count" class="visitor-badge">
+                <i class="fas fa-eye text-primary"></i>
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" alt="Views" style="height:20px;">
             </div>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
