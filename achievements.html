@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | Arpan Chattopadhyay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            color: #003366; /* Deep Blue text */
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Light Orange Hero Section */
+        .hero-section {
+            background-color: #fff3e0; 
+            padding: 50px 0;
+            border-bottom: 1px solid #ffe0b2;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            color: #e65100; /* Orange accent */
+            font-weight: 700;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #ffffff !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .navbar-brand, .nav-link {
+            color: #003366 !important;
+            font-weight: 600;
+        }
+        .nav-link.active { border-bottom: 2px solid #003366; }
+
+        /* Achievement Cards */
+        .achievement-card {
+            border-left: 5px solid #0056b3; /* Blue accent line */
+            background-color: #f8fbff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .achievement-card:hover {
+            transform: translateX(5px);
+        }
+
+        .badge-custom {
+            background-color: #e65100;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Footer & Visitor Badge */
+        footer {
+            background-color: #212121;
+            color: #ffffff;
+            padding: 40px 0;
+            margin-top: auto;
+            text-align: center;
+        }
+
+        .visitor-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .visitor-badge {
+            width: auto !important;
+            height: 20px !important;
+            border: none !important;
+            display: inline-block !important;
+        }
+
+        .eye-icon { color: #0056b3; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Arpan Chattopadhyay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="achievements.html">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1>Academic Achievements</h1>
+            <p class="lead">National Qualifications & Research Grants</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+
+                <div class="achievement-card shadow-sm">
+                    <span class="badge-custom">National Level</span>
+                    <h5 class="fw-bold"><i class="fas fa-award text-primary me-2"></i> CSIR-UGC NET-JRF Qualified</h5>
+                    <p class="mb-0">Successfully qualified the Junior Research Fellowship (JRF), demonstrating high proficiency in life sciences and research aptitude at a national level.</p>
+                </div>
+
+                <div class="achievement-card shadow-sm">
+                    <span class="badge-custom">National Level</span>
+                    <h5 class="fw-bold"><i class="fas fa-medal text-primary me-2"></i> UGC NET-LS (Qualified 4 Times)</h5>
+                    <p class="mb-0">Qualified the National Eligibility Test for Lectureship (NET-LS) across four distinct examination cycles.</p>
+                </div>
+
+                <div class="achievement-card shadow-sm">
+                    <span class="badge-custom">National Level</span>
+                    <h5 class="fw-bold"><i class="fas fa-graduation-cap text-primary me-2"></i> GATE-XL Qualified</h5>
+                    <p class="mb-0">Qualified the Graduate Aptitude Test in Engineering (Life Sciences), showcasing technical knowledge in biosciences.</p>
+                </div>
+
+                <div class="achievement-card shadow-sm">
+                    <span class="badge-custom">International Grant</span>
+                    <h5 class="fw-bold"><i class="fas fa-flask text-primary me-2"></i> BWF Research Grant Recipient</h5>
+                    <p class="mb-0">Principal investigator for research funded by the <strong>Badminton World Federation (BWF)</strong> on the impact of high-intensity training on hormonal profiles and cf-mtDNA.</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Arpan Chattopadhyay</p>
+            <div class="visitor-container">
+                <i class="fas fa-eye eye-icon"></i>
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" alt="Visitor Count" class="visitor-badge">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
