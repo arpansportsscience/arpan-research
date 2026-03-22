@@ -5,163 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arpan Chattopadhyay | Sports Science Researcher</title>
 
-    <meta name="description" content="Arpan Chattopadhyay - PhD Research Scholar at Central University of Rajasthan. Specialized in Sports Injury biomarkers (cf-mtDNA) and Exercise Physiology.">
-    <meta name="keywords" content="Arpan Chattopadhyay, Sports Science, Exercise Physiology, Central University of Rajasthan, PhD Researcher, cf-mtDNA, Sports Injury">
-    <meta name="author" content="Arpan Chattopadhyay">
+    <meta name="description" content="Arpan Chattopadhyay - PhD Research Scholar at Central University of Rajasthan. Specialized in cf-mtDNA biomarkers and Sports Science.">
+    <meta name="keywords" content="Arpan Chattopadhyay, Sports Science, Mitochondria, cf-mtDNA, Biomarkers, CURAJ">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
-        /* Global Styles */
+        /* Global Theme */
         body {
             font-family: 'Segoe UI', Roboto, sans-serif;
-            color: #003366; /* Deep Blue text */
+            color: #003366;
             background-color: #ffffff;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
 
-        /* Light Orange Hero Section */
+        /* NEW: Sports & DNA Themed Background */
         .hero-section {
-            background-color: #fff3e0; 
-            padding: 60px 0;
-            border-bottom: 1px solid #ffe0b2;
+            background-color: #fff3e0;
+            /* Subtle pattern of DNA and Sports shapes */
+            background-image: url("https://www.transparenttextures.com/patterns/cubes.png"), 
+                              linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            position: relative;
+            padding: 80px 0;
+            border-bottom: 2px solid #ffe0b2;
+            overflow: hidden;
+        }
+
+        /* Decorative DNA/Mito Icons (Floating effect) */
+        .hero-section::before {
+            content: "\f471"; /* DNA Icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 150px;
+            color: rgba(0, 86, 179, 0.05);
+            right: -20px;
+            top: 20px;
+            transform: rotate(15deg);
+        }
+
+        .hero-section::after {
+            content: "\f44b"; /* Heartbeat/Mito icon */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 120px;
+            color: rgba(230, 81, 0, 0.05);
+            left: -30px;
+            bottom: 10px;
         }
 
         .profile-img {
-            width: 140px;
-            height: 140px;
+            width: 160px;
+            height: 160px;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #0056b3; 
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 5px solid #ffffff;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
         }
 
-        .hero-section h1 { color: #003366; font-weight: 700; }
-        .hero-section .lead { color: #0056b3; font-weight: 500; }
+        /* Navbar */
+        .navbar { background: #fff !important; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .navbar-brand, .nav-link { color: #003366 !important; font-weight: 600; }
+        .nav-link.active { color: #e65100 !important; border-bottom: 2px solid #e65100; }
 
-        /* Navbar Styling */
-        .navbar {
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .navbar-brand, .nav-link {
-            color: #003366 !important;
-            font-weight: 600;
-        }
-        .nav-link.active { border-bottom: 2px solid #003366; }
-
-        /* Content Sections */
-        .section-padding { padding: 60px 0; }
-        
-        .research-card {
-            border-left: 5px solid #0056b3;
-            background-color: #f8fbff;
+        /* INTERESTING RESEARCH FOCUS SECTION */
+        .focus-box {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #eef2f7;
+            transition: all 0.3s ease;
+            text-align: center;
             height: 100%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.02);
         }
 
-        .pub-preview-card {
-            border: 1px solid #eee;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 15px;
-            background-color: #fff;
-            transition: 0.3s;
-        }
-        .pub-preview-card:hover { border-color: #0056b3; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-
-        /* Footer & Visitor Badge */
-        footer {
-            background-color: #212121;
-            color: #ffffff;
-            padding: 40px 0;
-            margin-top: auto;
+        .focus-box:hover {
+            transform: translateY(-10px);
+            border-color: #0056b3;
+            box-shadow: 0 15px 30px rgba(0,86,179,0.1);
         }
 
-        .visitor-container {
+        .focus-icon {
+            width: 60px;
+            height: 60px;
+            background: #fff3e0;
+            color: #e65100;
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            margin-top: 5px;
+            margin: 0 auto 15px;
+            font-size: 1.5rem;
+            transition: 0.3s;
         }
 
-        .visitor-badge {
-            width: auto !important;
-            height: 20px !important;
-            border: none !important;
-            display: inline-block !important;
+        .focus-box:hover .focus-icon {
+            background: #0056b3;
+            color: #ffffff;
         }
 
-        .eye-icon { color: #0056b3; font-size: 1.1rem; }
+        .pub-preview-card {
+            border-left: 4px solid #e65100;
+            background: #f8fbff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* Footer */
+        footer { background: #212121; color: white; padding: 40px 0; margin-top: auto; }
+        .visitor-badge { height: 22px; vertical-align: middle; }
     </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Arpan Chattopadhyay</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Arpan Chattopadhyay</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <header class="hero-section text-center">
         <div class="container">
-            <img src="https://static.wixstatic.com/media/61f43c_fe90efbe39ae4342b0fcd0cfeb8a1785~mv2.jpg" 
-                 alt="Arpan Chattopadhyay" class="profile-img">
+            <img src="https://static.wixstatic.com/media/61f43c_fe90efbe39ae4342b0fcd0cfeb8a1785~mv2.jpg" alt="Arpan" class="profile-img">
             <h1 class="display-4">Arpan Chattopadhyay</h1>
-            <p class="lead">Research Scholar | Sports Biosciences</p>
+            <p class="lead"><i class="fas fa-dna me-2"></i>Research Scholar | Sports Biosciences</p>
             <div class="mt-3">
-                <a href="https://www.linkedin.com/in/arpan-chattopadhyay-8a5b59197/" target="_blank" class="text-decoration-none mx-2"><i class="fab fa-linkedin fa-2x" style="color:#0056b3"></i></a>
-                <a href="https://twitter.com/Arpanchatt007" target="_blank" class="text-decoration-none mx-2"><i class="fab fa-twitter fa-2x" style="color:#0056b3"></i></a>
+                <a href="https://www.linkedin.com/in/arpan-chattopadhyay-8a5b59197/" target="_blank" class="mx-2 text-decoration-none"><i class="fab fa-linkedin fa-2x" style="color:#0056b3"></i></a>
+                <a href="https://twitter.com/Arpanchatt007" target="_blank" class="mx-2 text-decoration-none"><i class="fab fa-twitter fa-2x" style="color:#0056b3"></i></a>
             </div>
         </div>
     </header>
 
-    <main class="container section-padding">
-        <div class="row g-4">
-            <div class="col-md-7">
-                <h2 class="mb-4">About Me</h2>
-                <p>I am a PhD research scholar at the <strong>Central University of Rajasthan</strong>. My expertise lies in evaluating <strong>cell-free circulatory mitochondrial DNA (CFC-MT-DNA)</strong> as a biomarker for physiological and psychological stress.</p>
-                <p>My work aims to bridge the gap between molecular bioscience and applied sports medicine to improve athlete health monitoring.</p>
+    <main class="container my-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h2 class="mb-4 fw-bold">About My Research</h2>
+                <p>I am a PhD Scholar at the <strong>Central University of Rajasthan</strong>. My work stands at the intersection of Molecular Biology and Sports Medicine.</p>
+                <p>I specialize in <strong>Cell-free circulating mitochondrial DNA (cf-mtDNA)</strong>. By analyzing these tiny genetic fragments in athletes, we can understand how the body responds to high-intensity stress and prevent injuries before they happen.</p>
                 
-                <h3 class="mt-5 mb-4">Latest Research</h3>
+                <h4 class="mt-5 mb-3">Recent Publication</h4>
                 <div class="pub-preview-card">
-                    <small class="text-uppercase fw-bold text-primary">2024 • Gene Journal</small>
-                    <h6 class="fw-bold mb-1">Meta-analysis of Circulatory mitomiRs in stress Response</h6>
-                    <a href="publications.html" class="small text-decoration-none">Read more →</a>
+                    <span class="badge bg-primary mb-2">2025 • Biomarkers</span>
+                    <h6 class="fw-bold">Evaluating cf-mtDNA as a comprehensive biomarker for stress...</h6>
+                    <a href="publications.html" class="small text-decoration-none">Read Full List →</a>
                 </div>
-                <div class="pub-preview-card">
-                    <small class="text-uppercase fw-bold text-primary">2023 • Human Gene</small>
-                    <h6 class="fw-bold mb-1">Cell-Free Mitochondrial DNA as a Novel biomarker for stress</h6>
-                    <a href="publications.html" class="small text-decoration-none">Read more →</a>
-                </div>
-                <a href="publications.html" class="btn btn-outline-primary btn-sm mt-2">View Full Publication List</a>
             </div>
 
-            <div class="col-md-5">
-                <div class="p-4 research-card rounded shadow-sm">
-                    <h5 class="fw-bold mb-3">Research Focus</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-microscope text-primary me-2"></i> Sports Injury Biomarkers</li>
-                        <li class="mb-2"><i class="fas fa-running text-primary me-2"></i> Exercise Physiology</li>
-                        <li class="mb-2"><i class="fas fa-dna text-primary me-2"></i> CFC-MT-DNA Analysis</li>
-                        <li><i class="fas fa-heartbeat text-primary me-2"></i> Stress Response Patterns</li>
-                    </ul>
+            <div class="col-lg-5">
+                <h2 class="mb-4 fw-bold text-center">Research Focus</h2>
+                <div class="row g-3">
+                    <div class="col-6">
+                        <div class="focus-box">
+                            <div class="focus-icon"><i class="fas fa-microscope"></i></div>
+                            <h6 class="fw-bold">Biomarkers</h6>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="focus-box">
+                            <div class="focus-icon"><i class="fas fa-running"></i></div>
+                            <h6 class="fw-bold">Exercise Phys.</h6>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="focus-box">
+                            <div class="focus-icon"><i class="fas fa-dna"></i></div>
+                            <h6 class="fw-bold">cf-mtDNA</h6>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="focus-box">
+                            <div class="focus-icon"><i class="fas fa-dumbbell"></i></div>
+                            <h6 class="fw-bold">Sports Injury</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,16 +203,10 @@
 
     <footer class="text-center">
         <div class="container">
-            <p class="mb-1">&copy; 2026 Arpan Chattopadhyay</p>
-            <p class="small text-muted">Central University of Rajasthan</p>
-            
-            <div class="mt-4">
-                <p class="small mb-1 text-secondary">Total Page Views</p>
-                <div class="visitor-container">
-                    <i class="fas fa-eye eye-icon"></i>
-                    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" 
-                         alt="Visitor Count" class="visitor-badge">
-                </div>
+            <p class="mb-1">© 2026 Arpan Chattopadhyay | Central University of Rajasthan</p>
+            <div class="mt-3">
+                <i class="fas fa-eye text-primary me-2"></i>
+                <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Farpansportsscience.github.io%2Farpan-research&count_bg=%230056b3&title_bg=%23555555&title=Views&edge_flat=false" alt="Views" class="visitor-badge">
             </div>
         </div>
     </footer>
@@ -186,3 +214,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
