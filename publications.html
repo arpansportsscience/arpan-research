@@ -1,220 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Arpan Chattopadhyay</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <style>
-        body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            color: #003366; /* Deep Blue text */
-            background-color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background-color: #fff3e0; 
-            padding: 50px 0;
-            border-bottom: 1px solid #ffe0b2;
-            text-align: center;
-        }
-        .hero-section h1 { color: #e65100; font-weight: 700; }
-
-        /* Navbar */
-        .navbar {
-            background-color: #ffffff !important;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .navbar-brand, .nav-link {
-            color: #003366 !important;
-            font-weight: 600;
-        }
-        .nav-link.active { border-bottom: 2px solid #003366; }
-
-        /* Profile Buttons Section */
-        .profile-buttons .btn {
-            margin: 8px;
-            padding: 10px 24px;
-            font-weight: 600;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .btn-scholar { background-color: #4285f4; color: white; border: none; }
-        .btn-scholar:hover { background-color: #357ae8; color: white; box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3); }
-
-        .btn-scopus { border: 2px solid #ff6600; color: #ff6600; background: transparent; }
-        .btn-scopus:hover { background-color: #ff6600; color: white; }
-
-        .btn-orcid { border: 2px solid #a6ce39; color: #a6ce39; background: transparent; }
-        .btn-orcid:hover { background-color: #a6ce39; color: white; }
-
-        /* Publication Cards */
-        .pub-card {
-            border-left: 5px solid #0056b3;
-            background-color: #f8fbff;
-            margin-bottom: 25px;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: 0.3s;
-        }
-        .pub-card:hover { transform: translateX(8px); border-left-color: #e65100; }
-        
-        .year-badge { 
-            background-color: #e65100; 
-            color: white; 
-            padding: 3px 12px; 
-            border-radius: 20px; 
-            font-size: 0.85rem; 
-            font-weight: bold;
-        }
-
-        /* Footer & Visitor Badge */
-        footer {
-            background-color: #212121;
-            color: #ffffff;
-            padding: 40px 0;
-            margin-top: auto;
-            text-align: center;
-        }
-        .visitor-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 5px;
-        }
-        .visitor-badge { height: 22px !important; width: auto !important; border: none !important; }
-        .eye-icon { color: #0056b3; font-size: 1.1rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publications | Dr. Arpan Chattopadhyay</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav aria-label="Main"><div class="wrap">
+  <a class="brand" href="index.html">Dr. Arpan Chattopadhyay</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="publications.html" aria-current="page">Publications</a></li>
+    <li><a href="achievements.html">Achievements</a></li>
+    <li><a href="photos.html">Photos</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div></nav>
 
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Arpan Chattopadhyay</a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<header class="page-head">
+  <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="70" fill="none" stroke="#0e7c86" stroke-width="16" stroke-dasharray="10 4"/><circle cx="100" cy="100" r="40" fill="none" stroke="#e65100" stroke-width="8" stroke-dasharray="6 5"/></svg>
+  <div class="wrap">
+    <h1>Research publications</h1>
+    <p>Peer-reviewed work on mitochondrial biomarkers, stress response and athlete health.</p>
+    <div class="links">
+      <a class="btn" href="https://scholar.google.co.in/citations?user=L8FYtzgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=58348190200" target="_blank" rel="noopener">Scopus</a>
+      <a class="btn" href="https://orcid.org/0000-0001-8648-2917" target="_blank" rel="noopener">ORCID</a>
+    </div>
+  </div>
+</header>
 
-    <header class="hero-section">
-        <div class="container">
-            <h1>Research Publications</h1>
-            <p class="lead">PhD Scholar | Central University of Rajasthan</p>
-        </div>
-    </header>
+<main><div class="wrap">
+  <div class="stats">
+    <div class="stat"><b>6</b><span>Publications, 2022 to 2026</span></div>
+    <div class="stat"><b>2</b><span>Meta-analyses</span></div>
+    <div class="stat"><b>3</b><span>Elsevier, Thieme, Taylor &amp; Francis, Springer Nature</span></div>
+  </div>
 
-    <main class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-10">
-                
-                <div class="text-center mb-5 profile-buttons">
-                    <a href="https://scholar.google.co.in/citations?user=L8FYtzgAAAAJ" target="_blank" class="btn btn-scholar shadow-sm">
-                        <i class="fas fa-graduation-cap me-2"></i> Google Scholar
-                    </a>
-                    <a href="https://www.scopus.com/authid/detail.uri?authorId=58348190200" target="_blank" class="btn btn-scopus shadow-sm">
-                        <i class="fas fa-book me-2"></i> Scopus Profile
-                    </a>
-                    <a href="https://orcid.org/0000-0001-8648-2917" target="_blank" class="btn btn-orcid shadow-sm">
-                        <i class="fab fa-orcid me-2"></i> ORCID iD
-                    </a>
-                </div>
+  <h2>Publications per year</h2>
+  <div class="chart" id="yearchart" role="img" aria-label="Number of publications per year"></div>
 
-                <h3 class="mb-4 fw-bold border-bottom pb-2">Latest Research</h3>
+  <div class="chips" role="group" aria-label="Filter publications">
+    <button class="chip" data-f="all" aria-pressed="true">All</button>
+    <button class="chip" data-f="journal" aria-pressed="false">Journal articles</button>
+    <button class="chip" data-f="meta" aria-pressed="false">Meta-analyses</button>
+    <button class="chip" data-f="conf" aria-pressed="false">Conference</button>
+  </div>
 
-               
-                 <div class="pub-card">
-                    <span class="year-badge">2026</span>
-                    <h5 class="mt-3 fw-bold">Cell-Free Circulating Mitochondrial DNA: A Biomarker of Physiological Stress and Adaptation in Athletes</h5>
-                    <p class="mb-1 text-muted small text-uppercase">International Journal of Sports Medicine | Thieme </p>
-                    <p class="mb-2">Arpan Chattopadhyay, Patrick Diel, B. Hemanth Naick</p>
-                    <a href="https://doi.org/10.1055/a-2929-9682" target="_blank" class="btn btn-sm btn-outline-primary">View Article <i class="fas fa-external-link-alt ms-1"></i></a>
-                </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                <div class="pub-card">
-                    <span class="year-badge">2025</span>
-                    <h5 class="mt-3 fw-bold">Cell-Free Circulating Mitochondrial DNA: A Biomarker of Physiological Stress and Adaptation in Athletes</h5>
-                    <p class="mb-1 text-muted small text-uppercase">Biomarkers | Taylor & Francis Online</p>
-                    <p class="mb-2">Arpan Chattopadhyay, Harshita Tak, B. Hemanth Naick</p>
-                    <a href="https://doi.org/10.1080/1354750X.2025.2522888" target="_blank" class="btn btn-sm btn-outline-primary">View Article <i class="fas fa-external-link-alt ms-1"></i></a>
-                </div> 
-                
-                
-              
+  <div class="tl">
+    <article class="pub" data-year="2026" data-type="journal">
+      <div class="yr">2026</div>
+      <div>
+        <h3>Cell-Free Circulating Mitochondrial DNA: A Biomarker of Physiological Stress and Adaptation in Athletes</h3>
+        <div class="venue">International Journal of Sports Medicine | Thieme</div>
+        <div class="authors">Arpan Chattopadhyay, Patrick Diel, B. Hemanth Naick</div>
+        <span class="tag">Journal article</span><a href="https://doi.org/10.1055/a-2929-9682" target="_blank" rel="noopener">View article</a>
+      </div>
+    </article>
+    <article class="pub" data-year="2025" data-type="journal">
+      <div class="yr">2025</div>
+      <div>
+        <h3>Cell-Free Circulating Mitochondrial DNA: A Biomarker of Physiological Stress and Adaptation in Athletes</h3>
+        <div class="venue">Biomarkers | Taylor &amp; Francis Online</div>
+        <div class="authors">Arpan Chattopadhyay, Harshita Tak, B. Hemanth Naick</div>
+        <span class="tag">Journal article</span><a href="https://doi.org/10.1080/1354750X.2025.2522888" target="_blank" rel="noopener">View article</a>
+      </div>
+    </article>
+    <article class="pub" data-year="2025" data-type="conf">
+      <div class="yr">2025</div>
+      <div>
+        <h3>Effect of Stretching Exercise on Recovery of Quadriceps Tendinosis: A Case Study</h3>
+        <div class="venue">Springer Nature | International Conference of the Indian Society of Ergonomics</div>
+        <div class="authors">Chattopadhyay, A., Das, S., Tak, H., Ramya, P., Moyra, B., Ranjan, D., Hemanth Naick, B.</div>
+        <span class="tag">Conference</span><a href="https://link.springer.com/chapter/10.1007/978-981-97-7804-1_9" target="_blank" rel="noopener">View article</a>
+      </div>
+    </article>
+    <article class="pub" data-year="2024" data-type="meta">
+      <div class="yr">2024</div>
+      <div>
+        <h3>Meta-analysis of Circulatory mitomiRs in Stress Response: Unveiling the Significance of miR-34a and miR-146a</h3>
+        <div class="venue">Gene | Elsevier</div>
+        <div class="authors">Chattopadhyay, A., Tak, H., Anirudh, J., Naick, B. H.</div>
+        <span class="tag">Meta-analysis</span><a href="https://doi.org/10.1016/j.gene.2024.148370" target="_blank" rel="noopener">View article</a>
+      </div>
+    </article>
+    <article class="pub" data-year="2023" data-type="meta">
+      <div class="yr">2023</div>
+      <div>
+        <h3>Cell-Free Mitochondrial DNA as a Novel Biomarker for Stress-Related Conditions: A Meta-Analysis</h3>
+        <div class="venue">Human Gene | Elsevier</div>
+        <div class="authors">Chattopadhyay, A., Tak, H., Hemanth Naick, B.</div>
+        <span class="tag">Meta-analysis</span><a href="https://doi.org/10.1016/j.humgen.2023.201198" target="_blank" rel="noopener">View article</a>
+      </div>
+    </article>
+    <article class="pub" data-year="2022" data-type="journal">
+      <div class="yr">2022</div>
+      <div>
+        <h3>Effects of Various Types of Carbohydrate Supplements in Endurance Performance</h3>
+        <div class="venue">Advances in Biotechnology and Bioscience | A. Nik Publications</div>
+        <div class="authors">Chattopadhyay, A., Majumder, P., Mondal, T.</div>
+        <span class="tag">Journal article</span>
+      </div>
+    </article>
+  </div>
+</div></main>
 
-                <div class="pub-card">
-                    <span class="year-badge">2025</span>
-                    <h5 class="mt-3 fw-bold">Effect of Stretching Exercise on Recovery of Quadriceps Tendinosis: A Case Study</h5>
-                    <p class="mb-1 text-muted small text-uppercase">Springer Nature | International Conference of the Indian Society of Ergonomics</p>
-                    <p class="mb-0">Chattopadhyay, A., Das, S., Tak, H., Ramya, P., Moyra, B., Ranjan, D., Hemanth Naick, B.</p>
-                    <a href="https://link.springer.com/chapter/10.1007/978-981-97-7804-1_9" target="_blank" class="btn btn-sm btn-outline-primary">View Article <i class="fas fa-external-link-alt ms-1"></i></a>
-                </div>
-
-                <div class="pub-card">
-                    <span class="year-badge">2024</span>
-                    <h5 class="mt-3 fw-bold">Meta-analysis of Circulatory mitomiRs in stress Response: Unveiling the significance of miR-34a and miR-146a</h5>
-                    <p class="mb-1 text-muted small text-uppercase">Gene Journal (Elsevier)</p>
-                    <p class="mb-0">Chattopadhyay, A., Tak, H., Anirudh, J., Naick, B. H.</p>
-                    <a href="https://doi.org/10.1016/j.gene.2024.148370" target="_blank" class="btn btn-sm btn-outline-primary">View Article <i class="fas fa-external-link-alt ms-1"></i></a>
-                </div>
-
-                <div class="pub-card">
-                    <span class="year-badge">2023</span>
-                    <h5 class="mt-3 fw-bold">Cell-Free Mitochondrial DNA as a Novel biomarker for stress-related conditions - Meta-Analysis</h5>
-                    <p class="mb-1 text-muted small text-uppercase">Human Gene (Elsevier)</p>
-                    <p class="mb-0">Chattopadhyay, A., Tak, H., Hemanth Naick, B.</p>
-                    <a href="https://doi.org/10.1016/j.humgen.2023.201198" target="_blank" class="btn btn-sm btn-outline-primary">View Article <i class="fas fa-external-link-alt ms-1"></i></a>
-                </div>
-
-                <div class="pub-card">
-                    <span class="year-badge">2022</span>
-                    <h5 class="mt-3 fw-bold">Effects of Various Types of Carbohydrate Supplements in Endurance Performance</h5>
-                    <p class="mb-1 text-muted small text-uppercase">Advances in Biotechnology and Bioscience (A. Nik Publications)</p>
-                    <p class="mb-0">Chattopadhyay, A., Majumder, P., Mondal, T.</p>
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p class="mb-1 text-white">&copy; 2026 Arpan Chattopadhyay</p>
-            <div class="visitor-container d-flex align-items-center justify-content-center gap-2 mt-3">
-    <i class="fas fa-eye text-primary"></i>
-    <a href="https://hits.sh/arpansportsscience.github.io/arpan-research/">
-        <img src="https://hits.sh/arpansportsscience.github.io/arpan-research.svg?label=Views&color=0056b3" 
-             alt="Visitor Counter" 
-             style="height: 20px;">
-    </a>
-</div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<footer class="foot"><div class="wrap">
+  <div>Dr. Arpan Chattopadhyay, PhD Sports Bioscience, Central University of Rajasthan</div>
+  <div class="vc">Unique visitors <b data-visitors>…</b></div>
+</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
