@@ -113,6 +113,42 @@
   <div>Dr. Arpan Chattopadhyay, PhD Sports Bioscience, Central University of Rajasthan</div>
   <div class="vc">Unique visitors <b data-visitors>…</b></div>
 </div></footer>
+<script>
+(function(){
+  var chart=document.getElementById('yearchart');
+  var pubs=document.querySelectorAll('.pub[data-year]');
+  var cnt={},max=0;
+  pubs.forEach(function(p){
+    var y=p.getAttribute('data-year');
+    cnt[y]=(cnt[y]||0)+1;
+    if(cnt[y]>max)max=cnt[y];
+  });
+  if(chart){
+    Object.keys(cnt).sort().forEach(function(y){
+      chart.insertAdjacentHTML('beforeend','<div class="col"><b>'+cnt[y]+'</b><div class="bar" style="height:'+(cnt[y]/max*70)+'%"></div>'+y+'</div>');
+    });
+  }
+  var chips=document.querySelectorAll('.chip');
+  chips.forEach(function(ch){
+    ch.addEventListener('click',function(){
+      var f=ch.getAttribute('data-f');
+      chips.forEach(function(x){x.setAttribute('aria-pressed',x===ch?'true':'false')});
+      pubs.forEach(function(p){
+        var show=(f==='all'||p.getAttribute('data-type')===f);
+        p.style.display=show?'':'none';
+      });
+    });
+  });
+})();
+</script>
+
+
+
+
+
+
+
+  
 <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
 <script src="site.js"></script>
 </body>
