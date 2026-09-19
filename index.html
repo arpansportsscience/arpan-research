@@ -86,9 +86,11 @@ details p{margin:10px 0 0;color:var(--ink-2)}
 .tools{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:16px 0 0}
 .tools li{background:var(--tint);color:var(--ink);border-radius:999px;padding:4px 14px;font-size:.9rem}
 
+/* footer */
 footer{background:var(--ink);color:#dbe6ef;padding:36px 0;font-size:.9rem}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
-footer a{color:#fff}
+.vc{background:rgba(255,255,255,.12);padding:4px 14px;border-radius:999px}
+.vc b{color:#fff;margin-left:6px}
 
 @media (max-width:820px){
   .hero .wrap,.about{grid-template-columns:1fr}
@@ -201,8 +203,8 @@ footer a{color:#fff}
 
 <footer>
   <div class="wrap">
-    <div>&copy; 2026 Arpan Chattopadhyay. PhD Scholar, Central University of Rajasthan.</div>
-    <a href="https://hits.sh/arpansportsscience.github.io/arpan-research/"><img src="https://hits.sh/arpansportsscience.github.io/arpan-research.svg?label=Unique%20Visitors&color=0056b3&style=flat-square" alt="Unique visitor counter" height="22"></a>
+    <div>Dr. Arpan Chattopadhyay, PhD Sports Bioscience, Central University of Rajasthan</div>
+    <div class="vc">Unique visitors <b data-visitors>…</b></div>
   </div>
 </footer>
 
@@ -227,5 +229,7 @@ footer a{color:#fff}
   s.addEventListener('input',up); up();
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
