@@ -1,95 +1,75 @@
-.contact-card {
-    border-left: 5px solid #eca471;
-}
+:root{--ink:#0b2e4f;--ink-2:#3d566e;--paper:#f4f8fb;--line:#d5e0ea;--accent:#e65100;--teal:#0e7c86;--tint:#e6f1f5;--serif:'Source Serif 4',Georgia,serif;--sans:'IBM Plex Sans','Segoe UI',Roboto,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:400 1rem/1.65 var(--sans);color:var(--ink);background:#fff}
+a{color:var(--teal)}a:hover{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);line-height:1.2;margin:0 0 .5em}
+p{max-width:68ch}
 
-.visitor-counter img {
-    border-radius: 5px;
-    margin-top: 5px;
-}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.brand{font:700 1.1rem var(--serif);color:var(--ink);text-decoration:none}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--ink);text-decoration:none;font-weight:500;padding:4px 0;border-bottom:2px solid transparent}
+nav ul a:hover,nav ul a[aria-current]{border-color:var(--accent);color:var(--ink)}
 
-.btn-lg {
-    transition: transform 0.2s ease;
-}
+.page-head{position:relative;overflow:hidden;background:var(--paper);border-bottom:1px solid var(--line);padding:56px 0 44px}
+.page-head h1{font-size:clamp(1.9rem,4vw,2.6rem)}
+.page-head p{color:var(--ink-2);margin:0}
+.page-head svg{position:absolute;right:-40px;top:-30px;width:320px;opacity:.22;pointer-events:none}
+.page-head .wrap{position:relative}
+main{padding:44px 0 64px}
 
-.btn-lg:hover {
-    transform: translateY(-3px);
-}
-/* Updated Profile Image Styling */
-.profile-img {
-    width: 140px;      /* Smaller width */
-    height: 140px;     /* Match height for perfect circle */
-    border-radius: 50%;
-    border: 3px solid rgba(255, 255, 255, 0.8); /* Slightly thinner border */
-    object-fit: cover; /* Ensures face isn't stretched */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
-}
+.btn{display:inline-block;padding:8px 16px;border:2px solid var(--ink);border-radius:6px;font-weight:600;text-decoration:none;color:var(--ink);background:#fff;font:600 .95rem var(--sans);cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+.btn.solid{background:var(--ink);color:#fff}.btn.solid:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
 
-.profile-img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-/* 1. Fix the Background Image to Fit the Screen */
-.hero-section {
-    position: relative;
-    /* Dark overlay + Background Image */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://static.wixstatic.com/media/84770f_e9e3ddab1b664dfa8e77b6ff4380add8~mv2.jpg');
-    
-    /* This makes the image fit and center perfectly */
-    background-size: cover;      
-    background-position: center; 
-    background-repeat: no-repeat;
-    
-    /* Controls the height of the banner */
-    min-height: 450px; 
-    padding: 80px 0;
-    
-    display: flex;
-    align-items: center;
-    color: white;
-}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-bottom:36px}
+.stat{border-left:4px solid var(--accent);padding:4px 0 4px 14px}
+.stat b{display:block;font:700 2rem var(--serif)}
+.stat span{font-size:.9rem;color:var(--ink-2)}
 
-/* 2. Fix the Profile Photo Size and Shape */
-.profile-img {
-    width: 150px;           /* Fixed small width */
-    height: 150px;          /* Fixed height to match width */
-    object-fit: cover;      /* Crops the photo into the box without stretching */
-    border-radius: 50%;     /* Makes it a perfect circle */
-    border: 4px solid white;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-    margin-bottom: 20px;
-}
+/* publications */
+.chart{display:flex;align-items:flex-end;gap:14px;height:130px;padding:16px;background:var(--paper);border:1px solid var(--line);border-radius:10px;margin-bottom:28px}
+.col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:.85rem;color:var(--ink-2)}
+.bar{width:100%;max-width:56px;background:var(--teal);border-radius:4px 4px 0 0;min-height:4px}
+.col b{color:var(--ink)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 16px;font:500 .9rem var(--sans);color:var(--ink);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tl{border-left:2px solid var(--line);margin-left:8px}
+.pub{position:relative;display:grid;grid-template-columns:84px 1fr;gap:16px;padding:0 0 32px 28px}
+.pub::before{content:"";position:absolute;left:-9px;top:8px;width:16px;height:16px;border-radius:50%;background:#fff;border:4px solid var(--accent)}
+.pub[hidden]{display:none}
+.yr{font:700 1.5rem var(--serif);color:var(--accent)}
+.pub h3{font-size:1.15rem;margin-bottom:6px}
+.venue{color:var(--teal);font-weight:600;font-size:.95rem}
+.authors{color:var(--ink-2);font-size:.92rem;margin:4px 0 10px}
+.tag{display:inline-block;background:var(--tint);border-radius:999px;padding:2px 12px;font-size:.8rem;margin-right:8px}
 
-/* 3. Small adjustments for text readability */
-.hero-section h1 {
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
+/* achievements */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.ach{display:grid;grid-template-columns:84px 1fr;gap:18px;padding:22px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.ach:hover{border-color:var(--teal)}
+.seal{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;text-align:center;font:700 1.05rem/1.1 var(--serif);color:#fff;background:var(--teal);box-shadow:0 0 0 4px #fff,0 0 0 6px var(--teal)}
+.seal.intl{background:var(--accent);box-shadow:0 0 0 4px #fff,0 0 0 6px var(--accent)}
+.lvl{font-size:.82rem;font-weight:600;color:var(--teal)}.lvl.intl{color:var(--accent)}
+.ach h3{font-size:1.1rem;margin:2px 0 6px}.ach p{margin:0;font-size:.93rem;color:var(--ink-2)}
 
-.hero-section .lead {
-    font-size: 1.25rem;
-    opacity: 0.9;
-}
-/* This ensures the visitor counter stays a small badge and doesn't inherit profile pic styles */
-.visitor-badge {
-    width: auto !important;      /* Overrides any fixed width */
-    height: 20px !important;     /* Standard badge height */
-    border-radius: 0 !important; /* Removes the circle shape */
-    border: none !important;     /* Removes the white border */
-    box-shadow: none !important; /* Removes the shadow */
-    display: inline-block;       /* Keeps it centered with the text */
-    margin: 0 auto;
-}
-@media (max-width: 991px) {
-    .navbar-collapse {
-        background: #ffffff;
-        padding: 15px;
-        border-radius: 8px;
-        margin-top: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-}
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:#fff}
+.card h2{font-size:1.25rem;display:flex;align-items:center;gap:10px}
+.card svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:2}
+address{font-style:normal;line-height:1.8}
+.mail{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.mail:last-child{border:0}.mail a{word-break:break-all}
+
+.foot{background:var(--ink);color:#dbe6ef;padding:32px 0;font-size:.9rem}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
+.vc{background:rgba(255,255,255,.12);padding:4px 14px;border-radius:999px}.vc b{color:#fff;margin-left:6px}
+
+@media(max-width:760px){.grid,.cgrid{grid-template-columns:1fr}.pub{grid-template-columns:1fr;gap:2px}.page-head svg{width:220px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
